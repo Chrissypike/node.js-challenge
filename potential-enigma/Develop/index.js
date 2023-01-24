@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
-// TODO: An array of questions
+// An array of questions
 const questions = [
     {
         type: "input",
@@ -56,7 +56,7 @@ const questions = [
 
 ];
 
-// TODO: The function to write README filepotential-enigma/Develop/index.js
+//The function to write README filepotential-enigma/Develop/index.js
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function(err) {
         if (err) {
@@ -67,7 +67,7 @@ function writeToFile(fileName, data) {
     })
 }
 
-// TODO: The function to initialize app
+// The function to initialize app
 function init() {
     inquirer.prompt(questions).then(function(data) {
         writeToFile("README.Md", generateMarkdown(data));

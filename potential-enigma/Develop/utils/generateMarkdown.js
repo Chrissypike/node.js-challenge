@@ -1,5 +1,5 @@
 
-// TODO: The function to generate markdown for README
+// The function to generate markdown for README
   
 function generateMarkdown(data) {
     return `
